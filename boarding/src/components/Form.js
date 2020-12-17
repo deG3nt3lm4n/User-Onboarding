@@ -23,9 +23,25 @@ function Form({values, change, submmit, er, isDisable,u}) {
         <div className="inputDiv">
           <label>
             Name:
-            <input type="text" name="name" value={values.name} onChange={onChange} />
+            <input type="text" name="first_name" value={values.first_name} onChange={onChange} />
           </label>
-          <h6>{er.name}</h6>
+          <h6>{er.first_name}</h6>
+        </div>
+
+        <div className="inputDiv">
+          <label>
+            Last Name:
+            <input type="text" name="last_name" value={values.last_name} onChange={onChange} />
+          </label>
+          <h6>{er.last_name}</h6>
+        </div>
+
+        <div className="inputDiv">
+          <label>
+            Avatar:
+            <input type="url" name="avatar" value={values.avatar} onChange={onChange} />
+          </label>
+          <h6>{er.avatar}</h6>
         </div>
 
         <div className="inputDiv">
@@ -42,6 +58,19 @@ function Form({values, change, submmit, er, isDisable,u}) {
             <input type="password" name="password" value={values.password} onChange={onChange} />
           </label>
           <h6>{er.password}</h6>
+        </div>
+
+        <div className="inputDiv">
+          <label>
+            Role:
+            <select onChange={onChange} value={values.role} name="role">
+              <option>----</option>
+              <option value="student">Student</option>
+              <option value="developer">Developer</option>
+              <option value="hacker">Hacker</option>
+            </select>
+          </label>
+          <h6>{er.role}</h6>
         </div>
 
         <div className="inputDiv">

@@ -6,16 +6,22 @@ import PeopleCard from './components/PeopleCard'
 import * as yup from 'yup'
 
 const initialFormValue = {
-  name: '',
+  first_name: '',
+  last_name: '',
+  avatar: '',
   email: '',
   password: '',
+  role: '',
   terms: false
 }
 
 const initialError = {
-  name: '',
+  first_name: '',
+  last_name:'',
+  avatar: '',
   email: '',
   password: '',
+  role: '',
   terms: ''
 }
 
@@ -74,9 +80,12 @@ function App() {
   const formSubmit = () => {
 
     const newUser = {
-      name: formValue.name.trim(),
+      first_name: formValue.first_name.trim(),
       email: formValue.email.trim(),
+      last_name: formValue.last_name.trim(),
+      avatar: formValue.avatar === '' ? 'https://media.giphy.com/media/xTiTnglxjavpMILKGk/giphy-downsized.gif' : formValue.avatar,
       password: formValue.password.trim(),
+      role: formValue.role,
       terms: ['terms'].filter((term) => formValue[term])
     }
 
