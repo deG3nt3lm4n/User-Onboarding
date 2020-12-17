@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 
 function PeopleCard({users}) {
-  const [selectPerson, setSelectPerson] = useState([])
+  const [selectPerson, setSelectPerson] = useState(users)
 
   const personClick = (e) => {
     // console.log(e.target.innerText)
