@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.App{
+  width: 100%;
+  min-height: 100vh;
+  background-color: grey;
+}
+.main-header{
+  width: 100%;
+  padding: 5px;
+  font-size: 1.2rem;
+  text-align: center;
+  border-bottom: 10px solid black;
+  text-transform: capitalize;
+}
+
+.form-div{
+  width: 100%;
+  display: flex;
+}
+form, .hardData,.singlePerson, .personHero{
+  flex-basis: 50;
+}
+form{
+  padding: 10px;
+}
+.hardData{
+  background-color: black;
+  color: green;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+  overflow: auto;
+  max-width: 100%;
+}
+.hardData pre{
+  padding: 10px;
+}
+.peopleContainer{
+  display: flex;
+  width: 100%;
+}
+
+.singlePerson{
+  background-color: darkblue;
+  color:aliceblue;
+  padding: 10px 2px;
+  transition: all ease-in 500ms;
+  cursor: pointer;
+}
+.singlePerson:hover{
+  background-color: rgb(8, 8, 66);
+}
+.singlePerson h2{
+  font-weight: bolder;
+}
+.personHero{
+  width: 100%;
+  background-color: darkorange;
+  color: black;
+  padding: 20px;
+}
+.personHero h2{
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+.personHero .email{
+  font-size: 10px;
+}
+.personHero img{
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+
